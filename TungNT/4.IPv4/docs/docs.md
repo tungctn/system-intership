@@ -8,10 +8,12 @@
 
 ### 2. Tại sao không có IPv1, IPv2, IPv3, IPv5?
 
-- IPv1, IPv2, IPv3 không được công bố chính thức.
+- Trong lịch sử TCP thì phiên bản đầu tiên được thiết kế vào năm 1973 sau khi mạng ARPANET được phát triển. Tuy nhiên, phiên bản này không bao giờ được sử dụng rộng rãi.
+- Phiên bản 2 ra đời vào năm 1977, thử nghiệm kết nối 3 mạng lưới giữa Anh, Mỹ và Nauy. Tuy nhiên, phiên bản này cũng không bao giờ được sử dụng rộng rãi.
+- IPv3 là một phiên bản khác được phát triển bởi David Clark vào năm 1978, nhưng cũng không bao giờ được sử dụng rộng rãi.
 - IPv4 là phiên bản đầu tiên được sử dụng rộng rãi.
 - IPv5 là một giao thức khác được phát triển bởi một nhóm nghiên cứu tại AT&T, nhưng không bao giờ được sử dụng rộng rãi. Với IPv5, các nhà khoa học đã cố gắng tạo ra một giao thức mới để giải quyết vấn đề về đa phương tiện,
-  vì thế IPv5 còn được gọi là ST2 (Stream Protocol Version 2). Tuy nhiên cuối cùng công nghệ này chỉ được dùng để cải tiến băng thông cho IPv4
+vì thế IPv5 còn được gọi là ST2 (Stream Protocol Version 2). Tuy nhiên cuối cùng công nghệ này chỉ được dùng để cải tiến băng thông cho IPv4
 - IPv6 là phiên bản tiếp theo của IPv4.
 
 ### 3. Cấu trúc của gói dữ liệu IPv4
