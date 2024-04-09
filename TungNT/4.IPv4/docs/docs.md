@@ -13,7 +13,7 @@
 - IPv3 là một phiên bản khác được phát triển bởi David Clark vào năm 1978, nhưng cũng không bao giờ được sử dụng rộng rãi.
 - IPv4 là phiên bản đầu tiên được sử dụng rộng rãi.
 - IPv5 là một giao thức khác được phát triển bởi một nhóm nghiên cứu tại AT&T, nhưng không bao giờ được sử dụng rộng rãi. Với IPv5, các nhà khoa học đã cố gắng tạo ra một giao thức mới để giải quyết vấn đề về đa phương tiện,
-vì thế IPv5 còn được gọi là ST2 (Stream Protocol Version 2). Tuy nhiên cuối cùng công nghệ này chỉ được dùng để cải tiến băng thông cho IPv4
+  vì thế IPv5 còn được gọi là ST2 (Stream Protocol Version 2). Tuy nhiên cuối cùng công nghệ này chỉ được dùng để cải tiến băng thông cho IPv4
 - IPv6 là phiên bản tiếp theo của IPv4.
 
 ### 3. Cấu trúc của gói dữ liệu IPv4
@@ -38,6 +38,10 @@ vì thế IPv5 còn được gọi là ST2 (Stream Protocol Version 2). Tuy nhi�
   - Reserved (2 bit): dành cho sử dụng trong tương lai.
 - **Datagram Length (16 bits)**: Tổng độ dài của gói dữ liệu IP tính theo byte, độ dài trường này là 16 bit tương đương với 65535 byte. Tuy nhiên, hiếm khi kích thước vượt quá 1500 byte.
 - **Identification, Flag, Fragmentation**: Được sử dụng để phân mảnh gói dữ liệu IP khi gói dữ liệu quá lớn.
+- **Flags (3 bits)**: Được sử dụng để kiểm soát việc phân mảnh gói dữ liệu IP.
+  - Bit đầu tiên: Reserved, chưa sử dụng, giá trị luôn là 0.
+  - Bit thứ hai: Don't Fragment (DF), DF = 1: Gói tin bị phân đoạn, có nhiều hơn 1 đoạn, DF = 0: Gói tin ko bị phân đoạn.
+  - Bit thứ ba: More Fragment (MF), MF = 0: đoạn cuối cùng, MF = 1: chưa là đoạn cuối cùng, còn đoạn khác phía sau nữa.
 - **Time to Live (8 bits)**: Được sử dụng để đảm bảo gói dữ liệu không thể lưu chuyển mãi mãi trong mạng. Trường này sẽ giảm đi 1 sau mỗi lần gói dữ liệu đi qua một router. Khi trường này giảm về 0, gói dữ liệu sẽ bị loại bỏ.
 - **Protocol (8 bits)**: Trường này chỉ được sử dụng khi gói dữ liệu IP đến được máy đích. Trường này xác định giao thức lớp trên mà dữ liệu sẽ được chuyển đến. Giá trị của trường này xác định giao thức lớp trên mà dữ liệu sẽ được chuyển đến. Ví dụ: 6 cho TCP, 17 cho UDP.
 - **Header Checksum (16 bits)**: Giúp phát hiện lỗi trong tiêu đề gói dữ liệu IP được gửi đến. Giá trị checksum được tính bằng cách xem phần tiêu đề là một chuỗi các 16 bit, tính tổng của chúng và sau đó lấy bù 1 của tổng đó. Số bù của tổng này là Internet checksum.
