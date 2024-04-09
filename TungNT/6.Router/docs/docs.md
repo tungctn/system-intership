@@ -6,6 +6,11 @@
 
 - **Routing** là quá trình chuyển tiếp gói tin từ một mạng đến một mạng khác thông qua các thiết bị định tuyến (router).
 - **Router** là thiết bị mạng có khả năng chuyển tiếp gói tin giữa các mạng khác nhau.
+- Để định tuyến thì router cần phải:
+  - Địa chỉ IP của mạng đích.
+  - Xác định được source mà từ đó router có thể học được đường đi đến mạng đích.
+  - Những đường đi có thể chọn để chuyển tiếp gói tin đến mạng đích.
+  - Chọn đường đi tốt nhất để chuyển tiếp gói tin.
 
 ### Cấu tạo bảng định tuyến
 
