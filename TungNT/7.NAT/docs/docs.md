@@ -17,7 +17,7 @@
 
 ### 2.2. Dynamic NAT
 
-![Dynamic NAT](../images/dynamic_nat.png)
+<img src="../images/dynamic_nat.png" width="100%">
 
 - Dynamic NAT là kỹ thuật NAT mà địa chỉ IP private được chuyển đổi sang địa chỉ IP public một cách tự động.
 - Giống như Static NAT, Dynamic NAT cũng sử dụng một bảng NAT để lưu trữ thông tin về việc chuyển đổi địa chỉ IP. Tuy nhiên, Dynamic NAT sử dụng một pool các địa chỉ IP public để chuyển đổi địa chỉ IP private.
