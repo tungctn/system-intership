@@ -72,14 +72,18 @@ Tìm hiểu cách cài đặt gói offline: -->
 
 - Để cài đặt gói offline, bạn cần tải gói cần cài đặt và tất cả các gói phụ thuộc từ một máy có kết nối internet, sau đó chuyển sang máy không có kết nối internet và cài đặt từ các file gói đã tải về. Các bước thực hiện:
 
-  1. Tải gói có định dạng .rpm hoặc .deb từ trang chủ của gói hoặc từ các kho lưu trữ.
+  1. Tải gói có định dạng .rpm hoặc .deb từ trang chủ của gói hoặc từ các kho lưu trữ. Ví dụ: https://packages.debian.org/sid/i386/htop/download (gói .deb của htop)
 
-  2. Tải tất cả các gói phụ thuộc của gói cần cài đặt.
+  ![download](../images/image.png)
 
-  3. Chuyển các file gói đã tải về sang máy không có kết nối internet.
+  2. Chuyển các file gói đã tải về sang máy không có kết nối internet (tắt kết nối internet)
 
-  4. Cài đặt gói từ các file gói đã tải về bằng lệnh `rpm` hoặc `dpkg`. Ví dụ:
+  ![download](../images/image2.png)
+
+  3. Cài đặt gói từ các file gói đã tải về bằng lệnh `dpkg`. Ví dụ:
 
   ```
-   sudo dpkg -i <package_name>.deb
+   sudo dpkg -i /path/to/package.deb
   ```
+  ![download](../images/image3.png)
+
