@@ -90,4 +90,3 @@ Tìm hiểu cách cài đặt gói offline: -->
 ## Tài liệu tham khảo
 
 - https://hoang13.wordpress.com/2009/06/06/cai-d%E1%BA%B7t-ph%E1%BA%A7n-m%E1%BB%81m-offline-tren-ubuntu/
-- https://www.tecmint.com/install-local-deb-packages-in-debian-ubuntu/
